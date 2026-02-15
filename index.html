@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Habit Tracker</h1>
+        
+        <!-- Add Habit -->
+        <div class="add-habit">
+            <input type="text" id="habitInput" placeholder="Enter new habit (e.g., Drink water)">
+            <button id="addHabit">Add Habit</button>
+        </div>
+        
+        <!-- Habits List with Daily Checkboxes -->
+        <div id="habitList"></div>
+        
+        <!-- Progress Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="week">Week</button>
+            <button class="tab-btn" data-tab="month">Month</button>
+        </div>
+        
+        <!-- Progress Views -->
+        <div id="progressViews">
+            <div id="weekView" class="progress-view"></div>
+            <div id="monthView" class="progress-view hidden"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

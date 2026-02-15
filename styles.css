@@ -1,0 +1,21 @@
+body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+.container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+h1 { text-align: center; color: #333; }
+.add-habit { display: flex; gap: 10px; margin-bottom: 20px; }
+input { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 5px; }
+button { padding: 12px 20px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+button:hover { background: #218838; }
+.habit-item { background: #e9ecef; padding: 15px; margin: 10px 0; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; }
+.habit-name { font-weight: bold; }
+.delete-btn { background: #dc3545; padding: 5px 10px; font-size: 12px; }
+.delete-btn:hover { background: #c82333; }
+.calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-top: 10px; }
+.day { padding: 10px; text-align: center; border: 1px solid #ddd; border-radius: 3px; background: white; }
+.day.complete { background: #28a745; color: white; }
+.day.today { border-color: #007bff; font-weight: bold; }
+.progress-stats { text-align: center; margin: 20px 0; font-size: 18px; }
+.tabs { display: flex; justify-content: center; gap: 10px; margin: 20px 0; }
+.tab-btn { padding: 10px 20px; border: none; background: #ddd; border-radius: 5px; cursor: pointer; }
+.tab-btn.active { background: #007bff; color: white; }
+.hidden { display: none; }
+@media (max-width: 600px) { .add-habit { flex-direction: column; } .habit-item { flex-direction: column; gap: 10px; align-items: flex-start; } }
